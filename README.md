@@ -25,8 +25,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Azure Domain Controller Setup
-- Step 2
-- Step 3
+- Server Manager W/Active Directory
+- Active Directory Users and Computers
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
@@ -47,22 +47,29 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://github.com/Klinsmannn/Active-Directory-within-Azure-VMs/assets/146140975/7eaecb01-f6d9-480c-90a8-3faa2b0de590">
 
 
-In Azure Cloud create your resource group with a Windows Server on it. Were going to set your Domain controllers ip to static(nonmoving) so that it can be discovered on the network.We go to out Networking tab in the Domain controller and select the NIC(Network Interface Card). Lastly enable ICMPv4 traffic in the Advance Firewall setting in your domain controller. You can find Firewall settings by typing it in the windows search bar or on Control panel> Systems and Security> Windows Defender Firewall.
+In Azure Cloud create your resource group with a Windows Server on it. Were going to set your Domain controllers ip to static(nonmoving) so that it can be discovered on the network.We go to out Networking tab in the Domain controller and select the NIC(Network Interface Card). Lastly enable ICMPv4 traffic in the Advance Firewall setting in your domain controller. You can find Firewall settings by typing it in the windows search bar or in Control panel> Systems and Security> Windows Defender Firewall.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/Klinsmannn/Active-Directory-within-Azure-VMs/assets/146140975/b5a94463-cc15-43ea-af35-80e8c4afac8a">
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  <br />
+  <img src="https://github.com/Klinsmannn/Active-Directory-within-Azure-VMs/assets/146140975/f654e30e-26d5-49ae-903f-b93585d76d73">
+  <p>
+  </p>
+  <br />
+  
+
+Look up Server manager in your Domain controller and go into add Roles and Features. Next is to create your Forest and Root name for your Active Directory. Forest is like your main container containing other users,groups, and computers. Restart and Log back into Domain Controller.
 </p>
 <br />
-
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src= "https://github.com/Klinsmannn/Active-Directory-within-Azure-VMs/assets/146140975/05635ad5-0e98-427c-b7eb-93ecf1038a7a">
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ Open active directory in start menu or by going into tools in your server manager. 
 </p>
 <br />ory-within-Azure-VM-s
